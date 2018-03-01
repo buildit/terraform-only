@@ -11,6 +11,10 @@ variable "aws_profile" {
   description = "AWS profile name referenced in the credentials file."
 }
 
+variable "app_lb_name" {
+  description = "Name to give to the application load balancer (cannot be more than 18 characters and cannot include spaces)."
+}
+
 variable "owner" {
   description = "Name of the owner of the project. Could be your name or organization name for instance."
   default = "buildit"

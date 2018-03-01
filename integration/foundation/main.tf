@@ -17,6 +17,8 @@ module "foundation" {
   private_subnet_a_cidr_block = "10.1.11.0/24"
   private_subnet_b_cidr_block = "10.1.12.0/24"
 
+  app_lb_name                 = "${var.app_lb_name}"
+
   environment                 = "integration"
   owner                       = "${var.owner}"
   project                     = "${var.project}"
